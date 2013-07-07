@@ -1,0 +1,57 @@
+<html>
+
+<head>
+
+
+
+	<title>Jasmine Test Runner</title>
+  <META HTTP-EQUIV="CACHE-CONTROL" CONTENT="NO-CACHE">
+
+
+	<!-- Jasmine includes -->
+
+	<link rel="stylesheet" type="text/css" href="jasmine.css">
+
+	<script type="text/javascript" src="jasmine.js"></script>
+
+	<script type="text/javascript" src="jasmine-html.js"></script>
+
+  <script src="https://raw.github.com/jashkenas/coffee-script/master/extras/coffee-script.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.4/jquery.js"></script>
+  <script src="http://documentcloud.github.com/underscore/underscore.js"></script>
+  <script src="http://documentcloud.github.com/backbone/backbone.js"></script>
+
+
+
+
+	<!-- Source files -->
+
+	<script type="text/javascript" src="math.js"></script>
+
+
+
+	<!-- Spec files -->
+
+	<script type="text/javascript" src="specs/some_specs.js"></script>
+
+
+
+</head>
+
+<body>
+
+
+
+<script type="text/javascript">
+
+	jasmine.getEnv().addReporter(new jasmine.TrivialReporter());
+
+	jasmine.getEnv().execute();
+
+</script>
+
+
+
+</body>
+
+</html>
